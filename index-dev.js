@@ -1,55 +1,55 @@
-const postcodes = [
-  "GU1 3SE",
-  "GU1 3XN",
-  "GU8 5RA",
-  "GU14 8SX",
-  "GU8 5JH",
-  "GU7 1LU",
-  "GU14 9PJ",
-  "GU9 8WF",
-  "GU1 2PZ",
-  "GU15 2BY",
-  "IP25 7DR",
-  "KT23 3AQ",
-  "GU21 3JP",
-  "RG25 2RB",
-  "GU2 7RT",
-  "RG41 2AW",
-  "GU1 4LN",
-  "GU12 4RD",
-  "GU1 1DN",
-  "GU21 4SD",
-  "GU11 1FL",
-  "KT22 9BX",
-  "GU5 0EW",
-  "SY23 2HN",
-  "GU35 0FU",
-  "KT22 7JL",
-  "GU1 2SP",
-  "GU17 9FL",
-  "GU51 1BW",
-  "RG24 8BT",
-  "GU27SN",
-  "GU21 8AG",
-  "GU4 7YW",
-  "PL13 2QR",
-  "GU1 3SA",
-  "E14 0BN",
-  "KT19 0SB",
-  "BH31 7PT",
-  "W14 0AL",
-  "KT15 1FQ",
-  "HA9 7SF",
-  "WD18 7BL",
-  "TW19 5EN",
-  "GU5 0DY",
-  "TN23 3RU",
-  "SW17 0PP",
-  "HP2 5BX",
-  "GU1 2BZ",
-  "CR4 1QB",
-  "W1H 5AS",
-  "GU12 6BS",
+const initData = [
+  { name: "Gavin Shinfield", postcode: "GU1 3SE" },
+  { name: "Laurent Maguire", postcode: "GU1 3XN" },
+  { name: "Piers Palmer	Witley", postcode: "GU8 5RA" },
+  { name: "Steven Wake", postcode: "GU14 8SX" },
+  { name: "Nick Linnell", postcode: "GU8 5JH" },
+  { name: "Duncan Roberston", postcode: "GU7 1LU" },
+  { name: "David Quilter ", postcode: "GU14 9PJ" },
+  { name: "Harry Ford", postcode: "GU9 8WF" },
+  { name: "Olly Percival ", postcode: "GU1 2PZ" },
+  { name: "Pete White", postcode: "GU15 2BY" },
+  { name: "Andy West", postcode: "IP25 7DR" },
+  { name: "Chris Cannacott", postcode: "KT23 3AQ" },
+  { name: "Amy Johnstone", postcode: "GU21 3JP" },
+  { name: "Helen Beardshall (nee McCarthy)", postcode: "RG25 2RB" },
+  { name: "Steve Butler", postcode: "GU2 7RT" },
+  { name: "Tom Marshall", postcode: "RG41 2AW" },
+  { name: "Jess Mitchell", postcode: "GU1 4LN" },
+  { name: "Darby Manning", postcode: "GU12 4RD" },
+  { name: "David Cocks", postcode: "GU1 1DN" },
+  { name: "Zoe Turner", postcode: "GU21 4SD" },
+  { name: "Jamie Hunter", postcode: "GU11 1FL" },
+  { name: "Will Poole", postcode: "KT22 9BX" },
+  { name: "Richard Brett", postcode: "GU5 0EW" },
+  { name: "Damian Boni", postcode: "SY23 2HN" },
+  { name: "Chris Myers", postcode: "GU35 0FU" },
+  { name: "Michael Hogg", postcode: "KT22 7JL" },
+  { name: "Josh Jiminez", postcode: "GU1 2SP" },
+  { name: "Becky Baxter", postcode: "GU17 9FL" },
+  { name: "Ian Robinson", postcode: "GU51 1BW" },
+  { name: "Simon Hardy", postcode: "RG24 8BT" },
+  { name: "Andrew Peng	", postcode: "GU2 7SN" },
+  { name: "Andy Pike", postcode: "GU21 8AG" },
+  { name: "Mark Gangel", postcode: "GU4 7YW" },
+  { name: "Charlotte Bell", postcode: "PL13 2QR" },
+  { name: "Rebecca Brennan", postcode: "GU1 3SA" },
+  { name: "Scott Matthewman", postcode: "E14 0BN" },
+  { name: "Farhad Ajaz", postcode: "KT19 0SB" },
+  { name: "Rob Wills", postcode: "BH31 7PT" },
+  { name: "Guillaume Lannes", postcode: "W14 0AL" },
+  { name: "Tharindra Perera", postcode: "KT15 1FQ" },
+  { name: "Robin Marsden", postcode: "HA9 7SF" },
+  { name: "Henry Lo", postcode: "WD18 7BL" },
+  { name: "Claire Chase", postcode: "TW19 5EN" },
+  { name: "Henry Price", postcode: "GU5 0DY" },
+  { name: "Mike Dunkling", postcode: "TN23 3RU" },
+  { name: "Louise Green", postcode: "SW17 0PP" },
+  { name: "Madis Lond", postcode: "HP2 5BX" },
+  { name: "Melissa Mays", postcode: "GU1 2BZ" },
+  { name: "Gladwin Dosunmu", postcode: "CR4 1QB" },
+  { name: "Saranne Richter", postcode: "W1H 5AS" },
+  { name: "Ben Horsley-Summer", postcode: "GU12 6BS" },
 ];
 
 let locations = [];
@@ -78,11 +78,11 @@ function initMap() {
     fillColor: "#fff",
   });
 
-  postcodes.forEach((postcode) => plotAddress(postcode));
+  initData.forEach((data) => plotAddress(data));
 }
 
-function plotAddress(postcode) {
-  geocoder.geocode({ address: postcode }, function (results, status) {
+function plotAddress(data) {
+  geocoder.geocode({ address: data.postcode }, function (results, status) {
     if (status == "OK") {
       new google.maps.Marker({
         map: map,
@@ -96,21 +96,22 @@ function plotAddress(postcode) {
       });
       console.log("done");
       locations.push({
-        postcode: postcode,
+        name: data.name,
+        postcode: data.postcode,
         latlng: {
           lat: results[0].geometry.location.lat(),
           lng: results[0].geometry.location.lng(),
         },
       });
       console.log(locations.length);
-      if (locations.length === postcodes.length) {
+      if (locations.length === initData.length) {
         console.log(JSON.stringify(locations, undefined, 2));
       }
     } else if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
       console.log("limit");
       setTimeout(() => {
         console.log("waiting");
-        plotAddress(postcode);
+        plotAddress(data);
       }, 1000);
     } else {
       alert("Geocode was not successful for the following reason: " + status);

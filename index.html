@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>B Corp Map</title>
+    <title>Community - Economic Impact - Local Ownership - Map showing proximity of staff to office</title>
 
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <script src="./index.js"></script>
   </head>
   <body>
-    <h1>B Corp Map</h1>
+    <h1>Community - Economic Impact - Local Ownership - Map showing proximity of staff to office</h1>
+
+    <div>
+      <h3>Employees within 20 miles: <span id="counter-20"></span></h3>
+      <h3>Employees within 30 miles: <span id="counter-30"></span></h3>
+      <h3>Total: <span id="counter-total"></span></h3>
+    </div>
+
     <div id="map"></div>
 
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl_N4WA52C1OIL3SstV27lnZZ24i_5Mfs&callback=initMap&libraries=&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl_N4WA52C1OIL3SstV27lnZZ24i_5Mfs&callback=initMap&libraries=geometry&v=weekly"
       async
     ></script>
   </body>
