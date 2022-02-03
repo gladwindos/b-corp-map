@@ -16,11 +16,11 @@ const employeeData = [
     },
   },
   {
-    name: "Gavin Shinfield",
-    postcode: "GU1 3SE",
+    name: "Nick Linnell",
+    postcode: "GU8 5JH",
     latlng: {
-      lat: 51.235704,
-      lng: -0.566247,
+      lat: 51.1715379,
+      lng: -0.6505613,
     },
   },
   {
@@ -40,11 +40,27 @@ const employeeData = [
     },
   },
   {
-    name: "Nick Linnell",
-    postcode: "GU8 5JH",
+    name: "Pete White",
+    postcode: "GU15 2BY",
     latlng: {
-      lat: 51.1715379,
-      lng: -0.6505613,
+      lat: 51.3345648,
+      lng: -0.7236597,
+    },
+  },
+  {
+    name: "Gavin Shinfield",
+    postcode: "GU1 3SE",
+    latlng: {
+      lat: 51.235704,
+      lng: -0.566247,
+    },
+  },
+  {
+    name: "Andy West",
+    postcode: "IP25 7DR",
+    latlng: {
+      lat: 52.63165069999999,
+      lng: 0.7869813000000001,
     },
   },
   {
@@ -61,22 +77,6 @@ const employeeData = [
     latlng: {
       lat: 51.2402494,
       lng: -0.5418086,
-    },
-  },
-  {
-    name: "Pete White",
-    postcode: "GU15 2BY",
-    latlng: {
-      lat: 51.3345648,
-      lng: -0.7236597,
-    },
-  },
-  {
-    name: "Andy West",
-    postcode: "IP25 7DR",
-    latlng: {
-      lat: 52.63165069999999,
-      lng: 0.7869813000000001,
     },
   },
   {
@@ -400,14 +400,6 @@ const employeeData = [
     },
   },
   {
-    name: "Ben Horsley-Summer",
-    postcode: "GU12 6BS",
-    latlng: {
-      lat: 51.2521403,
-      lng: -0.7072993000000001,
-    },
-  },
-  {
     name: "Stephen Dawson",
     postcode: "GU4 8LQ",
     latlng: {
@@ -416,11 +408,27 @@ const employeeData = [
     },
   },
   {
+    name: "Ben Horsley-Summer",
+    postcode: "GU12 6BS",
+    latlng: {
+      lat: 51.2521403,
+      lng: -0.7072993000000001,
+    },
+  },
+  {
     name: "Mark Hil",
     postcode: "E8 2DZ",
     latlng: {
       lat: 51.5526636,
       lng: -0.073017,
+    },
+  },
+  {
+    name: "Carmen Lopez Guerra",
+    postcode: "Espartinas, Sevilla, Spain",
+    latlng: {
+      lat: 37.3800349,
+      lng: -6.1328179,
     },
   },
 ];
