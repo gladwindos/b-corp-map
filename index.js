@@ -495,7 +495,9 @@ function initMap() {
     );
   });
 
-  updateMarkerCounters(map, officeLocation);
+  updateMarkerCounters(officeLocation);
+
+  calcAvgDistance(officeLocation);
 }
 
 function customInfoWindow(content) {
@@ -543,7 +545,7 @@ function addLabelToRadius(map, circleCentre, radius, infoWindowContent) {
   });
 }
 
-function updateMarkerCounters(map, officeLocation) {
+function updateMarkerCounters(officeLocation) {
   const spherical = google.maps.geometry.spherical;
 
   let counter20 = 0;
@@ -566,4 +568,31 @@ function updateMarkerCounters(map, officeLocation) {
   document.querySelector("#counter-20").innerHTML = counter20;
   document.querySelector("#counter-30").innerHTML = counter30;
   document.querySelector("#counter-total").innerHTML = employeeData.length;
+}
+
+function calcAvgDistance(officeLocation) {
+  const spherical = google.maps.geometry.spherical;
+
+  let count = 0;
+  let totalDistance = 0;
+
+  employeeData.forEach((data) => {
+    const distance = spherical.computeDistanceBetween(
+      officeLocation,
+      data.latlng
+    );
+
+    if (distance <= 100000) {
+      console.log(distance * 0.000621);
+      count++;
+      totalDistance += distance;
+    }
+  });
+
+  const avgDistanceMetres = totalDistance / count;
+
+  const avgDistanceMiles = parseInt(avgDistanceMetres * 0.000621);
+
+  document.querySelector("#avg-distance").innerHTML =
+    avgDistanceMiles + " miles";
 }
