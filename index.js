@@ -1,50 +1,10 @@
 const employeeData = [
   {
-    name: "Steven Wake",
-    postcode: "GU14 8SX",
+    name: "Andy West",
+    postcode: "IP25 7DR",
     latlng: {
-      lat: 51.30529240000001,
-      lng: -0.7712819,
-    },
-  },
-  {
-    name: "Laurent Maguire",
-    postcode: "GU1 3XN",
-    latlng: {
-      lat: 51.2304098,
-      lng: -0.5708517000000001,
-    },
-  },
-  {
-    name: "Nick Linnell",
-    postcode: "GU8 5JH",
-    latlng: {
-      lat: 51.1715379,
-      lng: -0.6505613,
-    },
-  },
-  {
-    name: "Harry Ford",
-    postcode: "GU9 8WF",
-    latlng: {
-      lat: 51.2044205,
-      lng: -0.8154511999999999,
-    },
-  },
-  {
-    name: "Piers Palmer\tWitley",
-    postcode: "GU8 5RA",
-    latlng: {
-      lat: 51.1579085,
-      lng: -0.6571220999999999,
-    },
-  },
-  {
-    name: "Pete White",
-    postcode: "GU15 2BY",
-    latlng: {
-      lat: 51.3345648,
-      lng: -0.7236597,
+      lat: 52.63165069999999,
+      lng: 0.7869813000000001,
     },
   },
   {
@@ -56,11 +16,19 @@ const employeeData = [
     },
   },
   {
-    name: "Andy West",
-    postcode: "IP25 7DR",
+    name: "Nick Linnell",
+    postcode: "GU8 5JH",
     latlng: {
-      lat: 52.63165069999999,
-      lng: 0.7869813000000001,
+      lat: 51.1715379,
+      lng: -0.6505613,
+    },
+  },
+  {
+    name: "Piers Palmer\tWitley",
+    postcode: "GU8 5RA",
+    latlng: {
+      lat: 51.1579085,
+      lng: -0.6571220999999999,
     },
   },
   {
@@ -72,11 +40,43 @@ const employeeData = [
     },
   },
   {
+    name: "Harry Ford",
+    postcode: "GU9 8WF",
+    latlng: {
+      lat: 51.2044205,
+      lng: -0.8154511999999999,
+    },
+  },
+  {
+    name: "Laurent Maguire",
+    postcode: "GU1 3XN",
+    latlng: {
+      lat: 51.2304098,
+      lng: -0.5708517000000001,
+    },
+  },
+  {
+    name: "Steven Wake",
+    postcode: "GU14 8SX",
+    latlng: {
+      lat: 51.30529240000001,
+      lng: -0.7712819,
+    },
+  },
+  {
     name: "Olly Percival ",
     postcode: "GU1 2PZ",
     latlng: {
       lat: 51.2402494,
       lng: -0.5418086,
+    },
+  },
+  {
+    name: "Pete White",
+    postcode: "GU15 2BY",
+    latlng: {
+      lat: 51.3345648,
+      lng: -0.7236597,
     },
   },
   {
@@ -315,8 +315,8 @@ const employeeData = [
     name: "Tharindra Perera",
     postcode: "KT15 1FQ",
     latlng: {
-      lat: 51.359451,
-      lng: -0.50235,
+      lat: 51.3616897,
+      lng: -0.4983761,
     },
   },
   {
@@ -384,14 +384,6 @@ const employeeData = [
     },
   },
   {
-    name: "Gladwin Dosunmu",
-    postcode: "WD18 7JH",
-    latlng: {
-      lat: 51.6528295,
-      lng: -0.4208691,
-    },
-  },
-  {
     name: "Saranne Richter",
     postcode: "W1H 5AS",
     latlng: {
@@ -400,11 +392,11 @@ const employeeData = [
     },
   },
   {
-    name: "Stephen Dawson",
-    postcode: "GU4 8LQ",
+    name: "Gladwin Dosunmu",
+    postcode: "WD18 7JH",
     latlng: {
-      lat: 51.2143801,
-      lng: -0.5383589,
+      lat: 51.6528295,
+      lng: -0.4208691,
     },
   },
   {
@@ -424,11 +416,27 @@ const employeeData = [
     },
   },
   {
+    name: "Stephen Dawson",
+    postcode: "GU4 8LQ",
+    latlng: {
+      lat: 51.2143801,
+      lng: -0.5383589,
+    },
+  },
+  {
     name: "Carmen Lopez Guerra",
     postcode: "Espartinas, Sevilla, Spain",
     latlng: {
       lat: 37.3800349,
       lng: -6.1328179,
+    },
+  },
+  {
+    name: "Katie Buckley",
+    postcode: "GU27 2AP",
+    latlng: {
+      lat: 51.08934310000001,
+      lng: -0.7117833,
     },
   },
 ];
