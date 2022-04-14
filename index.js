@@ -1,5 +1,21 @@
 const employeeData = [
   {
+    name: "Steven Wake",
+    postcode: "GU14 8SX",
+    latlng: {
+      lat: 51.30529240000001,
+      lng: -0.7712819,
+    },
+  },
+  {
+    name: "Duncan Roberston",
+    postcode: "GU7 1LU",
+    latlng: {
+      lat: 51.1897945,
+      lng: -0.5941892999999999,
+    },
+  },
+  {
     name: "Andy West",
     postcode: "IP25 7DR",
     latlng: {
@@ -16,35 +32,11 @@ const employeeData = [
     },
   },
   {
-    name: "Nick Linnell",
-    postcode: "GU8 5JH",
+    name: "David Quilter ",
+    postcode: "GU14 9PJ",
     latlng: {
-      lat: 51.1715379,
-      lng: -0.6505613,
-    },
-  },
-  {
-    name: "Piers Palmer\tWitley",
-    postcode: "GU8 5RA",
-    latlng: {
-      lat: 51.1579085,
-      lng: -0.6571220999999999,
-    },
-  },
-  {
-    name: "Duncan Roberston",
-    postcode: "GU7 1LU",
-    latlng: {
-      lat: 51.1897945,
-      lng: -0.5941892999999999,
-    },
-  },
-  {
-    name: "Harry Ford",
-    postcode: "GU9 8WF",
-    latlng: {
-      lat: 51.2044205,
-      lng: -0.8154511999999999,
+      lat: 51.3029591,
+      lng: -0.7803241,
     },
   },
   {
@@ -56,11 +48,27 @@ const employeeData = [
     },
   },
   {
-    name: "Steven Wake",
-    postcode: "GU14 8SX",
+    name: "Pete White",
+    postcode: "GU15 2BY",
     latlng: {
-      lat: 51.30529240000001,
-      lng: -0.7712819,
+      lat: 51.3345648,
+      lng: -0.7236597,
+    },
+  },
+  {
+    name: "Nick Linnell",
+    postcode: "GU8 5JH",
+    latlng: {
+      lat: 51.1715379,
+      lng: -0.6505613,
+    },
+  },
+  {
+    name: "Harry Ford",
+    postcode: "GU9 8WF",
+    latlng: {
+      lat: 51.2044205,
+      lng: -0.8154511999999999,
     },
   },
   {
@@ -72,19 +80,11 @@ const employeeData = [
     },
   },
   {
-    name: "Pete White",
-    postcode: "GU15 2BY",
+    name: "Piers Palmer\tWitley",
+    postcode: "GU8 5RA",
     latlng: {
-      lat: 51.3345648,
-      lng: -0.7236597,
-    },
-  },
-  {
-    name: "David Quilter ",
-    postcode: "GU14 9PJ",
-    latlng: {
-      lat: 51.3029591,
-      lng: -0.7803241,
+      lat: 51.1579085,
+      lng: -0.6571220999999999,
     },
   },
   {
@@ -304,6 +304,14 @@ const employeeData = [
     },
   },
   {
+    name: "Henry Price",
+    postcode: "GU5 0DY",
+    latlng: {
+      lat: 51.1978346,
+      lng: -0.5565591,
+    },
+  },
+  {
     name: "Guillaume Lannes",
     postcode: "W14 0AL",
     latlng: {
@@ -344,14 +352,6 @@ const employeeData = [
     },
   },
   {
-    name: "Henry Price",
-    postcode: "GU5 0DY",
-    latlng: {
-      lat: 51.1978346,
-      lng: -0.5565591,
-    },
-  },
-  {
     name: "Mike Dunkling",
     postcode: "TN23 3RU",
     latlng: {
@@ -384,19 +384,19 @@ const employeeData = [
     },
   },
   {
-    name: "Saranne Richter",
-    postcode: "W1H 5AS",
-    latlng: {
-      lat: 51.5154412,
-      lng: -0.1631132,
-    },
-  },
-  {
     name: "Gladwin Dosunmu",
     postcode: "WD18 7JH",
     latlng: {
       lat: 51.6528295,
       lng: -0.4208691,
+    },
+  },
+  {
+    name: "Saranne Richter",
+    postcode: "W1H 5AS",
+    latlng: {
+      lat: 51.5154412,
+      lng: -0.1631132,
     },
   },
   {
@@ -408,19 +408,19 @@ const employeeData = [
     },
   },
   {
-    name: "Mark Hil",
-    postcode: "E8 2DZ",
-    latlng: {
-      lat: 51.5526636,
-      lng: -0.073017,
-    },
-  },
-  {
     name: "Stephen Dawson",
     postcode: "GU4 8LQ",
     latlng: {
       lat: 51.2143801,
       lng: -0.5383589,
+    },
+  },
+  {
+    name: "Mark Hil",
+    postcode: "E8 2DZ",
+    latlng: {
+      lat: 51.5526636,
+      lng: -0.073017,
     },
   },
   {
@@ -437,6 +437,14 @@ const employeeData = [
     latlng: {
       lat: 51.08934310000001,
       lng: -0.7117833,
+    },
+  },
+  {
+    name: "Hari Wyn-Williams",
+    postcode: "SA17 4AD",
+    latlng: {
+      lat: 51.7203213,
+      lng: -4.2370636,
     },
   },
 ];
@@ -591,7 +599,6 @@ function calcAvgDistance(officeLocation) {
     );
 
     if (distance <= 100000) {
-      console.log(distance * 0.000621);
       count++;
       totalDistance += distance;
     }
