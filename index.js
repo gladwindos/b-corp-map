@@ -1,37 +1,5 @@
 const employeeData = [
   {
-    name: "David Quilter ",
-    postcode: "GU14 9PJ",
-    latlng: {
-      lat: 51.3029591,
-      lng: -0.7803241,
-    },
-  },
-  {
-    name: "Steven Wake",
-    postcode: "GU14 8SX",
-    latlng: {
-      lat: 51.30529240000001,
-      lng: -0.7712819,
-    },
-  },
-  {
-    name: "Olly Percival ",
-    postcode: "GU1 2PZ",
-    latlng: {
-      lat: 51.2402494,
-      lng: -0.5418086,
-    },
-  },
-  {
-    name: "Piers Palmer\tWitley",
-    postcode: "GU8 5RA",
-    latlng: {
-      lat: 51.1579085,
-      lng: -0.6571220999999999,
-    },
-  },
-  {
     name: "Pete White",
     postcode: "GU15 2BY",
     latlng: {
@@ -48,14 +16,6 @@ const employeeData = [
     },
   },
   {
-    name: "Nick Linnell",
-    postcode: "GU8 5JH",
-    latlng: {
-      lat: 51.1715379,
-      lng: -0.6505613,
-    },
-  },
-  {
     name: "Harry Ford",
     postcode: "GU9 8WF",
     latlng: {
@@ -64,11 +24,35 @@ const employeeData = [
     },
   },
   {
-    name: "Laurent Maguire",
-    postcode: "GU1 3XN",
+    name: "Piers Palmer\tWitley",
+    postcode: "GU8 5RA",
     latlng: {
-      lat: 51.2304098,
-      lng: -0.5708517000000001,
+      lat: 51.1579085,
+      lng: -0.6571220999999999,
+    },
+  },
+  {
+    name: "Steven Wake",
+    postcode: "GU14 8SX",
+    latlng: {
+      lat: 51.30529240000001,
+      lng: -0.7712819,
+    },
+  },
+  {
+    name: "Nick Linnell",
+    postcode: "GU8 5JH",
+    latlng: {
+      lat: 51.1715379,
+      lng: -0.6505613,
+    },
+  },
+  {
+    name: "David Quilter ",
+    postcode: "GU14 9PJ",
+    latlng: {
+      lat: 51.3029591,
+      lng: -0.7803241,
     },
   },
   {
@@ -80,11 +64,27 @@ const employeeData = [
     },
   },
   {
+    name: "Laurent Maguire",
+    postcode: "GU1 3XN",
+    latlng: {
+      lat: 51.2304098,
+      lng: -0.5708517000000001,
+    },
+  },
+  {
     name: "Duncan Roberston",
     postcode: "GU7 1LU",
     latlng: {
       lat: 51.1897945,
       lng: -0.5941892999999999,
+    },
+  },
+  {
+    name: "Olly Percival ",
+    postcode: "GU1 2PZ",
+    latlng: {
+      lat: 51.2402494,
+      lng: -0.5418086,
     },
   },
   {
@@ -461,6 +461,14 @@ const employeeData = [
     latlng: {
       lat: 51.3729693,
       lng: 0.0069022,
+    },
+  },
+  {
+    name: "Chloe Edwards",
+    postcode: "BN5 9LF",
+    latlng: {
+      lat: 50.9399593,
+      lng: -0.2712994,
     },
   },
 ];

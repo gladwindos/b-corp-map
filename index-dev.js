@@ -57,6 +57,7 @@ const initData = [
   { name: "Hari Wyn-Williams", postcode: "SA17 4AD" },
   { name: "Lawrence Hall", postcode: "SE13 5LT" },
   { name: "Pete McQueen", postcode: "BR2 7DP" },
+  { name: "Chloe Edwards", postcode: "BN5 9LF" },
 ];
 
 let locations = [];
